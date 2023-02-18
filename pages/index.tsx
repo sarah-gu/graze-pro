@@ -1,5 +1,6 @@
 import { FormEvent, useEffect, useState } from 'react'
 import { useMutation, useQuery } from '../convex/_generated/react'
+import { Body } from '../src/components/Body'
 
 export default function App() {
   const messages = useQuery('listMessages') || []
@@ -19,8 +20,9 @@ export default function App() {
     await sendMessage(newMessageText, name)
   }
   return (
-    <main>
-      <h1>Convex Chat</h1>
+    <>
+          <Body /> 
+      {/* <h1>Convex Chat</h1>
       <p className="badge">
         <span>{name}</span>
       </p>
@@ -40,7 +42,8 @@ export default function App() {
           placeholder="Write a message…"
         />
         <input type="submit" value="Send" disabled={!newMessageText} />
-      </form>
-    </main>
+      </form> */}
+    </>
+
   )
 }
