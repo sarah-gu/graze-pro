@@ -1,6 +1,7 @@
 import { FormEvent, useEffect, useState } from 'react'
 import { useMutation, useQuery } from '../convex/_generated/react'
 import { Body } from '../src/components/Body'
+import { Simulation } from '../src/components/Simulation'
 
 export default function App() {
   const messages = useQuery('listMessages') || []
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <>
           <Body /> 
+          
       {/* <h1>Convex Chat</h1>
       <p className="badge">
         <span>{name}</span>
