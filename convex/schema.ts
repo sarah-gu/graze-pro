@@ -7,7 +7,6 @@ export default defineSchema({
     url: s.any(), 
   }),
   simulations: defineTable({
-    run: s.id("simulations"),
     time: s.number(),
     cowhealth: s.number(),
     grasshealth: s.number(),
