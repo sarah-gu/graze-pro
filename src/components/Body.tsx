@@ -1,11 +1,11 @@
 import { Display } from "./Display";
 import { Header } from "./Header";
-import { Sidebar } from "./Sidebar";
+import { SidebarHome } from "./SidebarHome";
 
 export const Body = () => { 
     return ( 
         <div className="w-screen h-screen flex flex-row"> 
-            <Sidebar /> 
+            <SidebarHome /> 
 
             <div className="flex flex-col z-10">
                 <Display /> 
