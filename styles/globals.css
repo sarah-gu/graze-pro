@@ -99,6 +99,15 @@ input:not([type]) {
   align-items: center;
 }
 
+.centered-all {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 input[type='submit'],
 button {
   margin-left: 4px;
@@ -119,7 +128,12 @@ button {
   font-size:32px;
   font-weight: 400;
   padding: 60px 20px 30px 30px;
+}
 
+.page-heading-2{
+  font-size:25px;
+  font-weight: 400;
+  padding: 0px 10px 10px 10px;
 }
 
 .left-align{

@@ -3,12 +3,13 @@ import { Profile } from "../icons/Profile";
 import Image from "next/image";
 import { History } from "../icons/History";
 import Link from "next/link";
+import { About } from "../icons/About";
 
 export const SidebarHistory = () => {
     return (
         <div className="flex flex-col w-48 text-slate-800 bg-green-300 p-4 rounded-r-xl justify-between ">
             <div className="flex flex-col gap-6 ">
-                <h1 className="text-[32px] pt-6 pb-8">GrazePro</h1>
+            <Link href="/"><h1 className="text-[32px] pt-6 pb-8">GrazePro</h1></Link>   
                 <Link href="/dashboard">
                     <div className="flex flex-row gap-2 p-4">
                         <div className="w-6 h-6"><Home /></div>
@@ -26,7 +27,13 @@ export const SidebarHistory = () => {
                         <div className="w-6 h-6"><History/></div>
                         <span>History</span>
                     </div>  
-                </Link>                        
+                </Link>  
+                <Link href="/about">
+                    <div className="flex flex-row gap-2 p-4 ">
+                        <div className="w-6 h-6"><About/></div>
+                        <span>About</span>
+                    </div>  
+                </Link>                             
             </div>
  
             <div className="bg-white rounded-xl w-10 relative">
