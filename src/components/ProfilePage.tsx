@@ -9,12 +9,13 @@ export const ProfilePage = () => {
     
     return (
 
-      <div className="w-screen h-screen flex flex-row"> 
+      <div className="flex flex-row h-screen"> 
         <SidebarProfile /> 
         
-        <div className="grid grid-cols-5 gap-3">
-        <FarmInfo/>
-        <UploadProfilePic/>
+        <div className="flex flex-row justify-between gap-3 h-screen overflow-hidden">
+          <div className="basis-1/2"><FarmInfo/></div>
+          <div className="basis-1/2"><UploadProfilePic/></div>
+        
         </div>
     </div>
     );

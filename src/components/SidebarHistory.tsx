@@ -12,7 +12,7 @@ export const SidebarHistory = () => {
                 <Link href="/dashboard">
                     <div className="flex flex-row gap-2 p-4">
                         <div className="w-6 h-6"><Home /></div>
-                        <span>Home</span>
+                        <span>Simulation</span>
                     </div> 
                 </Link>   
                 <Link href="/profile">
