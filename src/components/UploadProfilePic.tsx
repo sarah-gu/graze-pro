@@ -30,38 +30,42 @@ export const UploadProfilePic = () => {
       await sendImage(storageId, name, postUrl);
     }
     return (
-      <div className="flex flex-col col-span-3 m-10 ">
-        <ul>
-        <div className="flex flex-grow pl-40 pr-40 ">
-          <Image loader={()=> messages[messages.length] ? messages[1].url:"/images/pichart.png"} src={messages[1] ? messages[1].url :  "/images/grazepro.png"} height="1000" width="1000" alt="uploaded"/>
-        </div>
-    <div className="m-5">
-        <form onSubmit={handleSendImage}>
-            <input
-            type="file"
-            accept="image/*"
-            ref={imageInput}
-            onChange={event => setSelectedImage(event.target.files ? event.target.files[0]: undefined)}
-            className="ms-2 btn btn-primary"
-            disabled={selectedImage??false}
-            />
-            <input type="submit" value="Add Image" disabled={!selectedImage} />
-        </form>
-    </div>
-        <div className="overflow-scroll">
-          {messages.map(message=> (
-            <li key={message._id.toString()}>
-              <span>{message.author}:</span>
-              
-                <Image loader={() => message.url} src={message.url as string} height="300" width="300" alt="uploaded Farm Pic"/>
-              
-              <span>{new Date(message._creationTime).toLocaleTimeString()}</span>
-            </li>
-          ))}
-    </div>
-        </ul>
-        
-        
-      </div>
+      <>
+        <div className="mt-32 ml-12">Current Farm Image: </div>
+        <div className="flex flex-col m-10 mt-2 h-screen overflow-y-scroll">
+
+          <ul>
+          <div className="flex flex-grow pl-40 pr-40 ">
+            <Image loader={()=> messages[messages.length -1] ? messages[messages.length -1].url:"/images/cow.jpg"} src={messages[messages.length -1] ? messages[messages.length -1].url :  "/images/cow.jpg"} height="1000" width="1000" alt="uploaded"/>
+          </div>
+          <div className="m-5">
+              <form onSubmit={handleSendImage}>
+                  <input
+                  type="file"
+                  accept="image/*"
+                  ref={imageInput}
+                  onChange={event => setSelectedImage(event.target.files ? event.target.files[0]: undefined)}
+                  className="ms-2 btn btn-primary"
+                  disabled={selectedImage??false}
+                  />
+                  <input type="submit" value="Add Image" disabled={!selectedImage} />
+              </form>
+            </div>
+            <div className="overflow-scroll">
+              {messages.map(message=> (
+                <li key={message._id.toString()}>
+                  <span>{message.author}:</span>
+                  
+                    <Image loader={() => message.url} src={message.url as string} height="300" width="300" alt="uploaded Farm Pic"/>
+                  
+                  <span>{new Date(message._creationTime).toLocaleTimeString()}</span>
+                </li>
+              ))}
+              </div>
+            </ul>
+          </div>
+      </>
+      
+
     );
 }

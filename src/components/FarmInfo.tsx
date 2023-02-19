@@ -2,7 +2,7 @@
 
 export const FarmInfo = () => {
     return (
-        <div className = "col-span-2 w-100 g-6">
+        <div className = "col-span-2 w-100 ml-5">
             <div className="p-2 text-lg page-heading">Profile</div>
             <h1 className="left-align">
                 Address
@@ -19,14 +19,14 @@ export const FarmInfo = () => {
             <h1 className="left-align">
                 Climate Type
             </h1>
-            <ul className="left-align">
-                <li> - humid </li>
-                <li> - subtropical </li>
+            <ul className="left-align  ml-8">
+                <li> - Humid </li>
+                <li> - Subtropical </li>
             </ul>
             <h1 className="left-align">
                 Type of Cattle
             </h1>
-            <ul className="left-align">
+            <ul className="left-align ml-8">
                 <li> - Black Angus, Red Angus </li>
                 <li> - Charolais </li>
                 <li> - Horned and Polled Hereford </li>
@@ -34,7 +34,7 @@ export const FarmInfo = () => {
             <h1 className="left-align">
                 Vegetation
             </h1>
-            <ul className="left-align">
+            <ul className="left-align  ml-8">
                 <li> - Alfalfa </li>
                 <li> - Birdsfoot trefoil </li>
                 <li> - Clovers </li>

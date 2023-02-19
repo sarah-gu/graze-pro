@@ -13,7 +13,7 @@ export const SidebarHome = () => {
                 <Link href="/dashboard">
                     <div className="flex flex-row gap-2 bg-white p-4 w-64 rounded-full">
                         <div className="w-6 h-6"><Home /></div>
-                        <span>Home</span>
+                        <span>Simulation</span>
                     </div> 
                 </Link>   
                 <Link href="/profile">
