@@ -36,7 +36,7 @@ export const UploadProfilePic = () => {
 
           <ul>
           <div className="flex flex-grow pl-40 pr-40 ">
-            <Image loader={()=> messages[messages.length -1] ? messages[messages.length -1].url:"/images/pichart.png"} src={messages[messages.length -1] ? messages[messages.length -1].url :  "/images/grazepro.png"} height="1000" width="1000" alt="uploaded"/>
+            <Image loader={()=> messages[messages.length -1] ? messages[messages.length -1].url:"/images/cow.jpg"} src={messages[messages.length -1] ? messages[messages.length -1].url :  "/images/cow.jpg"} height="1000" width="1000" alt="uploaded"/>
           </div>
           <div className="m-5">
               <form onSubmit={handleSendImage}>
