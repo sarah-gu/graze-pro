@@ -1,5 +1,5 @@
-import { Home } from "./icons/Home";
-import { Profile } from "./icons/Profile";
+import { Home } from "../icons/Home";
+import { Profile } from "../icons/Profile";
 
 export const Sidebar = () => {
     return (
