@@ -1,6 +1,7 @@
-const grazing = require('./grazing.html'); 
+import grazing from "./grazing.html";
+
 export const Simulation = () => {
     return (
-        <div dangerouslySetInnerHTML={ {__html: grazing } }/>
+        <div dangerouslySetInnerHTML= { {__html: grazing } }/>
     ); 
 }
