@@ -30,29 +30,32 @@ export const UploadProfilePic = () => {
       await sendImage(storageId, name, postUrl);
     }
     return (
-        <div>
-                <ul>
-        {messages.map(message => (
-          <li key={message._id.toString()}>
-            <span>{message.author}:</span>
-             
-              <Image loader={() => message.url} src={message.url as string} height="300" width="300" alt="uploaded Farm Pic"/>
-            
-            <span>{new Date(message._creationTime).toLocaleTimeString()}</span>
-          </li>
-        ))}
-      </ul>
-            <form onSubmit={handleSendImage}>
-                <input
-                type="file"
-                accept="image/*"
-                ref={imageInput}
-                onChange={event => setSelectedImage(event.target.files ? event.target.files[0]: undefined)}
-                className="ms-2 btn btn-primary"
-                disabled={selectedImage??false}
-                />
-                <input type="submit" value="Send Image" disabled={!selectedImage} />
-            </form>
+      <div>
+        <ul>
+          {messages.map(message => (
+            <li key={message._id.toString()}>
+              <span>{message.author}:</span>
+              
+                <Image loader={() => message.url} src={message.url as string} height="300" width="300" alt="uploaded Farm Pic"/>
+              
+              <span>{new Date(message._creationTime).toLocaleTimeString()}</span>
+            </li>
+          ))}
+        </ul>
+        <form onSubmit={handleSendImage}>
+            <input
+            type="file"
+            accept="image/*"
+            ref={imageInput}
+            onChange={event => setSelectedImage(event.target.files ? event.target.files[0]: undefined)}
+            className="ms-2 btn btn-primary"
+            disabled={selectedImage??false}
+            />
+            <input type="submit" value="Send Image" disabled={!selectedImage} />
+        </form>
+        <div className="flex flex-grow">
+          <Image loader={()=> messages[1] ? messages[1].url:"/images/pichart.png"} src={messages[1] ? messages[1].url :  "/images/grazepro.png"} height="1000" width="1000" alt="uploaded"/>
         </div>
+      </div>
     );
 }
