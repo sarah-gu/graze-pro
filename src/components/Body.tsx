@@ -4,11 +4,10 @@ import { Sidebar } from "./Sidebar";
 
 export const Body = () => { 
     return ( 
-        <div className="bg-gray-100 w-screen h-screen flex flex-col"> 
+        <div className="w-screen h-screen flex flex-row"> 
+            <Sidebar /> 
 
-            <Header />
-            <div className="flex flex-row flex-grow">
-                <Sidebar /> 
+            <div className="flex flex-col z-10">
                 <Display /> 
             </div>
         </div>
