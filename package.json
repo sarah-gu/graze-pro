@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@blunck/next-html": "^1.0.0",
+    "@next/font": "^13.1.6",
     "convex": "0.9.1",
     "next": "latest",
     "react": "^18.2.0",
