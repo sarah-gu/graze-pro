@@ -10,7 +10,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@blunck/next-html": "^1.0.0",
     "convex": "0.9.1",
     "next": "latest",
     "react": "^18.2.0",
