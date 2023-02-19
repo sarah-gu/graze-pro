@@ -9,7 +9,7 @@ export const Body = () => {
             <Header />
             <div className="flex flex-row flex-grow">
                 <Sidebar /> 
-                <Display /> 
+                <Display />
             </div>
         </div>
     ); 

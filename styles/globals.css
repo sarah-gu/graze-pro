@@ -110,6 +110,12 @@ button {
   background-color: rgb(49, 108, 244);
 }
 
+.figures-num{
+  font-size: 30px;
+  color: darkgreen
+
+}
+
 input[type='submit']:hover,
 button:hover {
   background-color: rgb(41, 93, 207);
