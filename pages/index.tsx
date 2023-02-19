@@ -1,28 +1,29 @@
 import { FormEvent, useEffect, useState } from 'react'
 import { useMutation, useQuery } from '../convex/_generated/react'
-import { Body } from '../src/components/Body'
+import { Landing } from '../src/components/Landing'
 import { Simulation } from '../src/components/Simulation'
 
+
 export default function App() {
-  const messages = useQuery('listMessages') || []
+  // const messages = useQuery('listMessages') || []
 
-  const [newMessageText, setNewMessageText] = useState('')
-  const sendMessage = useMutation('sendMessage')
+  // const [newMessageText, setNewMessageText] = useState('')
+  // const sendMessage = useMutation('sendMessage')
 
-  const [name, setName] = useState('user')
+  // const [name, setName] = useState('user')
 
-  useEffect(() => {
-    setName('User ' + Math.floor(Math.random() * 10000))
-  }, [])
+  // useEffect(() => {
+  //   setName('User ' + Math.floor(Math.random() * 10000))
+  // }, [])
 
-  async function handleSendMessage(event: FormEvent) {
-    event.preventDefault()
-    setNewMessageText('')
-    await sendMessage(newMessageText, name)
-  }
+  // async function handleSendMessage(event: FormEvent) {
+  //   event.preventDefault()
+  //   setNewMessageText('')
+  //   await sendMessage(newMessageText, name)
+  // }
   return (
     <>
-          <Body /> 
+          <Landing /> 
           
       {/* <h1>Convex Chat</h1>
       <p className="badge">

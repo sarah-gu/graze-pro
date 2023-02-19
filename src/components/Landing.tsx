@@ -12,7 +12,7 @@ export const Landing = () =>{
                 <div className="flex flex-col text-slate-800 z-20 gap-6">
                     <div className="text-[96px] font-bold transition ease-in-out">GrazePro</div>
                     <div className="text-[24px]">Enabling farmers to sustainably optimize their resources. </div>
-                    <button className="text-[18px] hover:bg-green-400 bg-green-300 text-slate-800 h-12 w-32"><Link href="/">Login</Link></button>
+                    <button className="text-[18px] hover:bg-green-400 bg-green-300 text-slate-800 h-12 w-32"><Link href="/dashboard">Login</Link></button>
                 </div>
                 <div className="animate-[bounce_8s_infinite]">
                     <Image width="500" height="500" src="/images/grazepro.png" alt="Logo"></Image>

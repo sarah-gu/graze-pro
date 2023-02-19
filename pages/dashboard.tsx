@@ -1,7 +1,7 @@
-import { Landing } from "../src/components/Landing";
+import { Body } from "../src/components/Body";
 
 const Dashboard = () => {
-    return (<Landing /> );
+    return (<Body /> );
 }
 
 export default Dashboard; 
