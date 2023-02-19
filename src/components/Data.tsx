@@ -48,7 +48,7 @@ export const Data = () => {
                         </div>
                         <div className="basis-1/4 mt-7 m-10"> 
                         <div className="m-3 centered">Heat plot</div>
-                            <Image width="350" height="350" src="/images/health_plot.png" alt="Logo"></Image>
+                            <Image width="350" height="350" src="/images/heatmap.png" alt="Logo"></Image>
                         </div>
                         <div className="basis-3/5">
                             <div className="flex flex-row justify-between mx-9 mb-3 font-bold">
