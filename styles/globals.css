@@ -115,6 +115,13 @@ button {
 
 }
 
+.page-heading{
+  font-size:40px;
+  font-weight: 600;
+  padding: 60px 40px 60px 40px;
+
+}
+
 input[type='submit']:hover,
 button:hover {
   background-color: rgb(41, 93, 207);

@@ -6,4 +6,12 @@ export default defineSchema({
     body: s.string(),
     url: s.any(), 
   }),
+  simulations: defineTable({
+    run: s.id("simulations"),
+    time: s.number(),
+    cowhealth: s.number(),
+    grasshealth: s.number(),
+    numberpaddocks: s.number(),
+    rotationtime: s.number()
+  })
 })
