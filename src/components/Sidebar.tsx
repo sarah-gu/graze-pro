@@ -18,7 +18,7 @@ export const Sidebar = () => {
                 </div>   
             </div>
  
-            <div className="bg-white rounded-xl w-14 h-50 relative">
+            <div className="bg-white rounded-xl w-10 relative">
                 <Image src="/images/small.png" width="50" height="50" alt="logo"/>
            </div>
         </div>
