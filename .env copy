@@ -1,0 +1,3 @@
+# Production environment variables go here
+
+NEXT_PUBLIC_CONVEX_URL="https://cool-hedgehog-317.convex.cloud"
