@@ -3,6 +3,7 @@ import { useMutation, useQuery } from "../../convex/_generated/react";
 import Image from "next/image"; 
 import { UploadProfilePic } from "./UploadProfilePic";
 import { SidebarProfile } from "./SidebarProfile";
+import { FarmInfo } from "./FarmInfo";
 
 export const ProfilePage = () => {
     
@@ -10,8 +11,9 @@ export const ProfilePage = () => {
 
       <div className="w-screen h-screen flex flex-row"> 
         <SidebarProfile /> 
-
-        <div className="flex flex-col z-10">
+        
+        <div className="grid grid-cols-5 gap-3">
+        <FarmInfo/>
         <UploadProfilePic/>
         </div>
     </div>

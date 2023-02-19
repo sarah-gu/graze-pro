@@ -13,7 +13,6 @@ import type { ApiFromModules } from "convex/api";
 import type * as listMessages from "../listMessages";
 import type * as listSimulations from "../listSimulations";
 import type * as sendMessage from "../sendMessage";
-import type * as sendSimulations from "../sendSimulations";
 
 /**
  * A type describing your app's public Convex API.
@@ -28,5 +27,4 @@ export type API = ApiFromModules<{
   listMessages: typeof listMessages;
   listSimulations: typeof listSimulations;
   sendMessage: typeof sendMessage;
-  sendSimulations: typeof sendSimulations;
 }>;
